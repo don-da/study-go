@@ -7,6 +7,7 @@ import (
 
 // Mutex allows us to add locks to our data
 // WaitGroup is a means of waiting for goroutines to finish jobs
+// Don't use embedding because it's convenient and/or elegant
 
 func TestCounter(t *testing.T) {
 	t.Run("incrementing the counter 3 times leaves it at 3", func(t *testing.T) {
